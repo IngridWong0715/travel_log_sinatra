@@ -1,0 +1,52 @@
+/* custom navbar height, source: https://bootstrapious.com/p/how-to-change-bootstrap-navbar-height */
+
+.navbar {
+ min-height: 80px;
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+}
+
+.navbar-toggle {
+ /* (80px - button height 34px) / 2 = 23px */
+ margin-top: 23px;
+ padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+ .navbar-nav > li > a {
+   /* (80px - line-height of 27px) / 2 = 26.5px */
+   padding-top: 26.5px;
+   padding-bottom: 26.5px;
+   line-height: 27px;
+ }
+}
+
+/*
+.btn-outline-primary {
+color: #80020;
+background-color: transparent;
+background-image: none;
+border-color: #80020;
+} */
+
+
+/* WHY CAN"T I SELECT?  (welcome.erb Sign In button) */
+.btn.btn-outline-burgundy {
+
+  color: #800020;
+  background-color: transparent;
+  background-image: none;
+  border-color: #800020;
+
+
+}
+
+.btn-burgundy {
+  color: #fff;
+  background-color: #800020;
+  border-color: #800020;
+}

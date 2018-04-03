@@ -1,0 +1,79 @@
+<!-- MODAL FORM NOT SUBMITTING!! -->
+<nav class="navbar navbar-expand navbar-light" style="background-color: #EEE5EE;">
+  <a class="navbar-brand" href="#">TravelLog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Join or Log Into TravelLog
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+    <form class="form-horizontal" role="form" action="/login" method="POST">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" name="user[email]" id="email" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="password" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" name="user[password]" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary">Save changes</button>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+
+</nav>
+
+<div class="container-fluid">
+  <div class="row" id="welcome_image" >
+    <div class="col-md-4 offset-md-1">
+      <h1>This page isn't available</h1>
+      </h2>The link you followed may be broken, or the page may have been removed.</h2>
+    </div>
+      <div class="col-sm col-md-4 offset-md-3 big_block">
+        <h2>Create a new account here:</h2>
+        <form action="/signup" method="POST">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="string" class="form-control" name="user[first_name]"  id="first_name" placeholder="First name">
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="string" class="form-control" name="user[last_name]"  id="last_name" placeholder="Last name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="user[email]"  id="email" placeholder="email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="user[password]" id="password" placeholder="New password">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+    </div>
+</div>

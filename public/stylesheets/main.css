@@ -1,0 +1,28 @@
+body {
+  background-color: #EEE5EE;
+  font-family: Sans-Serif;
+  line-height: 18px;
+  }
+
+div.edit_form {
+  background-color: #EEE5EE;
+}
+
+div#welcome_image {
+  height: 90vh;
+  background: url("../images/Paris.jpg");
+  background-size: 100% 100%;
+}
+
+div#logged_in_background {
+  height: 90vh;
+  background: url("../images/faded.jpg");
+  background-size: 100% 100%;
+}
+
+/* 
+NOT WORKING, WHY? */
+h1#logo {
+  font-family: 'Parisienne', cursive;
+  color: red;
+}
